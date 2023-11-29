@@ -1,0 +1,13 @@
+**As a** customer support agent  
+**I need** to be able to read customer account information  
+**So that** I can provide customers with accurate and timely support regarding their account details.
+
+### Details and Assumptions
+* The microservice already has a database containing customer account information, including names and addresses.
+* The service provides an API endpoint to access this information.
+* Authentication and authorization mechanisms are in place to ensure data security.
+
+### Acceptance Criteria     
+**Given** a customer's unique account ID  
+**When** I send a request to the 'read account' API endpoint  
+**Then** I receive the requested customer account information, including their name and address, if the account exists and I have the necessary permissions.
