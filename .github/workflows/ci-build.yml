@@ -1,0 +1,12 @@
+name: CI Build
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Specify the runner
+    container: python:3.9-slim  # Define the container to use Python 3.9
